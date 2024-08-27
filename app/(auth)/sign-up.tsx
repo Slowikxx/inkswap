@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import FormTextInput from '@/components/FormTextInput';
 import { useRouter } from 'expo-router';
+import CustomButton from '@/components/CustomButton';
 
 const darkBackground = require('../../assets/images/dark-background.png');
 const lightBackground = require('../../assets/images/white-background.png');
@@ -70,6 +71,10 @@ const SignUp = () => {
 						value={password}
 						setValue={setPassword}
 						isPassword={true}
+					/>
+					<CustomButton
+						onPress={() => router.replace('/home')}
+						text={'sign up'}
 					/>
 				</View>
 				<Text

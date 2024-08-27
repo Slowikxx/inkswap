@@ -4,3 +4,8 @@ export type FormTextInputProps = {
 	setValue: (value: string) => void;
 	isPassword: boolean;
 };
+
+export type CustomButtonProps = {
+	onPress: () => void;
+	text: string;
+};

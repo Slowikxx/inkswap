@@ -7,6 +7,7 @@ module.exports = {
 		'./app/(auth)/sign-up.tsx',
 		'./app/(auth)/sign-in.tsx',
 		'./components/FormTextInput.tsx',
+		'./components/CustomButton.tsx',
 		'./components/index.ts',
 	],
 	theme: {

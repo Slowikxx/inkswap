@@ -1,3 +1,4 @@
 import FormTextInput from './FormTextInput';
+import CustomButton from './CustomButton';
 
-export default { FormTextInput };
+export default { FormTextInput, CustomButton };
