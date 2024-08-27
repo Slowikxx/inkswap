@@ -9,3 +9,8 @@ export type CustomButtonProps = {
 	onPress: () => void;
 	text: string;
 };
+
+export type CustomHeaderProps = {
+	title: string;
+	isArrowShown: boolean;
+};

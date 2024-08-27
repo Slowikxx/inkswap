@@ -1,12 +1,18 @@
 import { View, Text } from 'react-native';
 import React from 'react';
-import { Stack } from 'expo-router';
+import { Stack, Tabs } from 'expo-router';
+import CustomHeader from '@/components/CustomHeader';
 
 const MainLayout = () => {
 	return (
-		<Stack>
-			<Stack.Screen name="home" />
-		</Stack>
+		<Tabs>
+			<Tabs.Screen
+				name="home"
+				options={{
+					header: () => <CustomHeader isArrowShown={true} title={'Home'} />,
+				}}
+			/>
+		</Tabs>
 	);
 };
 
