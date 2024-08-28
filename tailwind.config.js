@@ -19,6 +19,7 @@ module.exports = {
 		'./components/CustomButton.tsx',
 		'./components/CustomHeader.tsx',
 		'./components/CustomTabBar.tsx',
+		'./components/FoldedButton.tsx',
 		'./components/index.ts',
 	],
 	theme: {

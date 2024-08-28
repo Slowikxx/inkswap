@@ -75,6 +75,7 @@ const SignIn = () => {
 					<CustomButton
 						onPress={() => router.replace('/home')}
 						text={'sign in'}
+						additionalStyles="w-72 h-10"
 					/>
 				</View>
 				<Text

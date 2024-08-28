@@ -8,9 +8,16 @@ export type FormTextInputProps = {
 export type CustomButtonProps = {
 	onPress: () => void;
 	text: string;
+	additionalStyles: string;
 };
 
 export type CustomHeaderProps = {
 	title: string;
 	isArrowShown: boolean;
+};
+
+export type FoldedButtonProps = {
+	text: string;
+	onPress: () => void;
+	icon: string;
 };

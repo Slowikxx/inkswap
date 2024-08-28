@@ -3,14 +3,18 @@ import React from 'react';
 import { useColorScheme } from 'nativewind';
 import { CustomButtonProps } from '@/types';
 
-const CustomButton = ({ onPress, text }: CustomButtonProps) => {
+const CustomButton = ({
+	onPress,
+	text,
+	additionalStyles,
+}: CustomButtonProps) => {
 	const { colorScheme } = useColorScheme();
 	return (
 		<Pressable onPress={onPress}>
 			<View
-				className={`w-72 h-10 rounded-lg px-3 py-2 mb-8 justify-center items-center ${
+				className={`rounded-lg px-3 py-2 mb-8 justify-center items-center ${
 					colorScheme === 'dark' ? 'bg-gray-400' : 'bg-gray-200'
-				}`}
+				} ${additionalStyles}`}
 			>
 				<Text
 					className={`font-coveredBYG text-xl ${
