@@ -1,10 +1,18 @@
-import { View, Text, Keyboard, Pressable, ImageBackground } from 'react-native';
+import {
+	View,
+	Text,
+	Keyboard,
+	Pressable,
+	ImageBackground,
+	Image,
+} from 'react-native';
 import { useColorScheme } from 'nativewind';
 import { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import FormTextInput from '@/components/FormTextInput';
 import { useRouter } from 'expo-router';
 import CustomButton from '@/components/CustomButton';
+import { darkLogo, lightLogo } from '@/constants/images';
 
 const darkBackground = require('../../assets/images/dark-background.png');
 const lightBackground = require('../../assets/images/white-background.png');
@@ -28,7 +36,7 @@ const SignIn = () => {
 				className="flex-1 justify-center items-center"
 			>
 				<StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
-				<View className="gap-3 justify-center items-center">
+				<View className="justify-center items-center">
 					<Text
 						className={`font-coveredBYG text-5xl ${
 							colorScheme === 'dark' ? 'text-lightText' : 'text-black'
@@ -36,13 +44,11 @@ const SignIn = () => {
 					>
 						Welcome back to
 					</Text>
-					<Text
-						className={`font-coveredBYG text-8xl ${
-							colorScheme === 'dark' ? 'text-lightText' : 'text-black'
-						} `}
-					>
-						Inkswap
-					</Text>
+					<Image
+						source={colorScheme === 'dark' ? lightLogo : darkLogo}
+						resizeMode="contain"
+						className="w-96 h-24 -mt-2 mb-2"
+					/>
 					<Text
 						className={`font-coveredBYG text-2xl flex-wrap w-64 text-center ${
 							colorScheme === 'dark' ? 'text-lightText' : 'text-black'

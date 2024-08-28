@@ -48,6 +48,32 @@ import lightLinedPaper from '../assets/images/lined_paper.png';
 import darkTornPaper from '../assets/images/dark_torn_paper.png';
 import darkLinedPaper from '../assets/images/dark_lined_paper.png';
 
+// Profile page dark
+import darkEdit from '../assets/images/dark_edit.png';
+import darkSettings from '../assets/images/dark_settings.png';
+import darkHelp from '../assets/images/dark_help.png';
+import darkFriends from '../assets/images/dark_friends.png';
+import darkLogout from '../assets/images/dark_logout.png';
+
+// Header dark
+export const darkCoin = require('../assets/images/dark_coin.png');
+export const darkBack = require('../assets/images/dark_back.png');
+
+// Profile page light
+import lightEdit from '../assets/images/light_edit.png';
+import lightSettings from '../assets/images/light_settings.png';
+import lightHelp from '../assets/images/light_help.png';
+import lightFriends from '../assets/images/light_friends.png';
+import lightLogout from '../assets/images/light_logout.png';
+
+// Header light
+export const lightCoin = require('../assets/images/light_coin.png');
+export const lightBack = require('../assets/images/light_back.png');
+
+// Logo
+export const darkLogo = require('../assets/images/dark_logo.png');
+export const lightLogo = require('../assets/images/light_logo.png');
+
 export default {
 	darkBookshelf,
 	darkHome,
@@ -85,4 +111,16 @@ export default {
 	lightLinedPaper,
 	darkTornPaper,
 	darkLinedPaper,
+	darkEdit,
+	darkSettings,
+	darkHelp,
+	darkFriends,
+	darkLogout,
+	darkCoin,
+	darkBack,
+	lightEdit,
+	lightSettings,
+	lightHelp,
+	lightFriends,
+	lightLogout,
 };
