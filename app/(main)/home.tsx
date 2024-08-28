@@ -1,9 +1,7 @@
-import { View, Text, ImageBackground } from 'react-native';
-import React, { useEffect } from 'react';
+import { ImageBackground } from 'react-native';
+import React from 'react';
 import { useColorScheme } from 'nativewind';
-
-const darkBackground = require('../../assets/images/dark-background.png');
-const lightBackground = require('../../assets/images/white-background.png');
+import { darkBackground, lightBackground } from '@/constants/images';
 
 const Home = () => {
 	const { colorScheme, setColorScheme } = useColorScheme();

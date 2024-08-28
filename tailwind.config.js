@@ -3,16 +3,23 @@ module.exports = {
 	content: [
 		'./app/**/*.{js,jsx,ts,tsx}',
 		'./components/**/*.{js,jsx,ts,tsx}',
+
 		'./app/(auth)/_layout.tsx',
 		'./app/(auth)/sign-up.tsx',
 		'./app/(auth)/sign-in.tsx',
+
+		'./app/(main)/_layout.tsx',
+		'./app/(main)/home.tsx',
+		'./app/(main)/bookshelf.tsx',
+		'./app/(main)/add.tsx',
+		'./app/(main)/shop.tsx',
+		'./app/(main)/profile.tsx',
+
 		'./components/FormTextInput.tsx',
 		'./components/CustomButton.tsx',
 		'./components/CustomHeader.tsx',
 		'./components/CustomTabBar.tsx',
 		'./components/index.ts',
-		'./app/(main)/_layout.tsx',
-		'./app/(main)/home.tsx',
 	],
 	theme: {
 		extend: {

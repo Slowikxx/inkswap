@@ -12,10 +12,12 @@ import { StatusBar } from 'expo-status-bar';
 import FormTextInput from '@/components/FormTextInput';
 import { useRouter } from 'expo-router';
 import CustomButton from '@/components/CustomButton';
-import { darkLogo, lightLogo } from '@/constants/images';
-
-const darkBackground = require('../../assets/images/dark-background.png');
-const lightBackground = require('../../assets/images/white-background.png');
+import {
+	darkLogo,
+	lightLogo,
+	darkBackground,
+	lightBackground,
+} from '@/constants/images';
 
 const SignUp = () => {
 	const { colorScheme, setColorScheme } = useColorScheme();

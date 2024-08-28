@@ -47,7 +47,7 @@ const CustomHeader = ({ title, isArrowShown }: CustomHeaderProps) => {
 						<Text
 							className={`font-coveredBYG text-3xl ${
 								colorScheme === 'dark' ? 'text-lightText' : 'text-black'
-							}`}
+							} ${!isArrowShown && 'pl-10'}`}
 						>
 							{title}
 						</Text>

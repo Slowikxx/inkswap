@@ -68,7 +68,11 @@ const CustomTabBar = ({
 			/>
 		),
 		add: (props: any) => (
-			<View className="bg-lightText w-24 h-24 rounded-full jutstify-center items-center absolute -top-24 -left-8">
+			<View
+				className={`w-24 h-24 rounded-full jutstify-center items-center absolute -top-24 -left-8 ${
+					colorScheme === 'dark' ? 'bg-[#2F2F2F]' : 'bg-[#E8E8E8]'
+				}`}
+			>
 				<Image source={darkPlus} className="w-24 h-24" />
 			</View>
 		),
