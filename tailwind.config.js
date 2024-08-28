@@ -9,9 +9,10 @@ module.exports = {
 		'./components/FormTextInput.tsx',
 		'./components/CustomButton.tsx',
 		'./components/CustomHeader.tsx',
+		'./components/CustomTabBar.tsx',
+		'./components/index.ts',
 		'./app/(main)/_layout.tsx',
 		'./app/(main)/home.tsx',
-		'./components/index.ts',
 	],
 	theme: {
 		extend: {

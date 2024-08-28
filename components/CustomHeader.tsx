@@ -4,13 +4,16 @@ import React, { useEffect } from 'react';
 import { useColorScheme } from 'nativewind';
 import { CustomHeaderProps } from '@/types';
 
-import { darkBack, darkCoin, lightBack, lightCoin } from '../constants/images';
-
-const darkTornPaper = require('../assets/images/dark_torn_paper.png');
-const lightTornPaper = require('../assets/images/torn_paper.png');
-
-const darkBackground = require('../assets/images/dark-background.png');
-const lightBackground = require('../assets/images/white-background.png');
+import {
+	darkBack,
+	darkCoin,
+	lightBack,
+	lightCoin,
+	darkTornPaper,
+	lightTornPaper,
+	lightBackground,
+	darkBackground,
+} from '../constants/images';
 
 const CustomHeader = ({ title, isArrowShown }: CustomHeaderProps) => {
 	const { colorScheme, setColorScheme } = useColorScheme();
