@@ -113,8 +113,8 @@ const CustomTabBar = ({
 		<View className="w-full h-20 flex-row justify-center items-center pl-10 pb-4">
 			<Image
 				source={colorScheme === 'dark' ? darkTornPaper : lightTornPaper}
-				className="absolute w-[180%] -left-[65px] -bottom-[615px] opacity-80"
-				resizeMode="contain"
+				className="absolute w-[800px] -top-[50px] opacity-60"
+				resizeMode="cover"
 			/>
 
 			{state.routes.map((route, index) => {

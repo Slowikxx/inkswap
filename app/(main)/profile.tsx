@@ -43,7 +43,9 @@ const Profile = () => {
 				</Text>
 				<CustomButton
 					text="edit profile"
-					onPress={() => {}}
+					onPress={() => {
+						console.log('edit');
+					}}
 					additionalStyles={`w-36 h-10 ${
 						colorScheme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'
 					}`}
@@ -53,7 +55,9 @@ const Profile = () => {
 			<View className="mt-2">
 				<FoldedButton
 					text="Settings"
-					onPress={() => {}}
+					onPress={() => {
+						console.log('settings');
+					}}
 					icon={colorScheme === 'dark' ? lightSettings : darkSettings}
 				/>
 				<FoldedButton

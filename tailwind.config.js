@@ -20,6 +20,8 @@ module.exports = {
 		'./components/CustomHeader.tsx',
 		'./components/CustomTabBar.tsx',
 		'./components/FoldedButton.tsx',
+		'./components/YourStuffItem.tsx',
+		'./components/FoldedShopItem.tsx',
 		'./components/index.ts',
 	],
 	theme: {

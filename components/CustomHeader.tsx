@@ -29,8 +29,8 @@ const CustomHeader = ({ title, isArrowShown }: CustomHeaderProps) => {
 			>
 				<Image
 					source={colorScheme === 'dark' ? darkTornPaper : lightTornPaper}
-					className="absolute w-[140%] -top-[610px] -left-[100px] opacity-80"
-					resizeMode="contain"
+					className="absolute -top-[370px] -left-[120px] opacity-60 w-[800px]"
+					resizeMode="cover"
 				/>
 				<View className="justify-between items-center w-full h-full mt-3 flex-row px-4">
 					<View className="flex-row items-center h-full gap-10">

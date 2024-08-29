@@ -21,3 +21,16 @@ export type FoldedButtonProps = {
 	onPress: () => void;
 	icon: string;
 };
+
+export type YourStuffItemProps = {
+	lightIcon: string;
+	darkIcon: string;
+	amount: number;
+};
+export type FoldedShopItemProps = {
+	lightIcon: string;
+	darkIcon: string;
+	title: string;
+	description: string;
+	price: number;
+};

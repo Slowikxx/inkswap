@@ -18,6 +18,7 @@ export const darkShelf = require('../assets/images/dark_shelf.png');
 export const darkSteal = require('../assets/images/dark_steal.png');
 export const darkStop = require('../assets/images/dark_stop.png');
 export const darkSurprise = require('../assets/images/dark_surprise.png');
+export const darkShield = require('../assets/images/dark_shield.png');
 
 // dark mode inactive
 export const lightBookshelf = require('../assets/images/light_bookshelf.png');
@@ -39,6 +40,7 @@ export const lightShelf = require('../assets/images/light_shelf.png');
 export const lightSteal = require('../assets/images/light_steal.png');
 export const lightStop = require('../assets/images/light_stop.png');
 export const lightSurprise = require('../assets/images/light_surprise.png');
+export const lightShield = require('../assets/images/light_shield.png');
 
 // background
 export const lightBackground = require('../assets/images/white-background.png');

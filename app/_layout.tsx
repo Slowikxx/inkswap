@@ -14,7 +14,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
 	const [fontsLoaded, error] = useFonts({
-		CoveredByYourGrace: require('../assets/fonts/CoveredByYourGrace-Regular.ttf'),
+		coveredBYG: require('../assets/fonts/coveredBYG.ttf'),
 	});
 
 	useEffect(() => {
