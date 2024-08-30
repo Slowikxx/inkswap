@@ -15,9 +15,12 @@ import {
 } from '@/constants/images';
 import CustomButton from '@/components/CustomButton';
 import FoldedButton from '@/components/FoldedButton';
+import { useRouter } from 'expo-router';
 
 const Profile = () => {
 	const { colorScheme } = useColorScheme();
+
+	const router = useRouter();
 
 	return (
 		<ImageBackground
@@ -56,7 +59,7 @@ const Profile = () => {
 				<FoldedButton
 					text="Settings"
 					onPress={() => {
-						console.log('settings');
+						router.push('/story/1');
 					}}
 					icon={colorScheme === 'dark' ? lightSettings : darkSettings}
 				/>

@@ -14,6 +14,7 @@ module.exports = {
 		'./app/(main)/add.tsx',
 		'./app/(main)/shop.tsx',
 		'./app/(main)/profile.tsx',
+		'./app/(main)/story/[id].tsx',
 
 		'./components/FormTextInput.tsx',
 		'./components/CustomButton.tsx',

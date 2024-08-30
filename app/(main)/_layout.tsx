@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from 'expo-router';
+import { Stack, Tabs } from 'expo-router';
 import CustomHeader from '@/components/CustomHeader';
 import CustomTabBar from '@/components/CustomTabBar';
 

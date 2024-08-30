@@ -6,7 +6,7 @@ const FoldedButton = ({ text, icon, onPress }: FoldedButtonProps) => {
 	const { colorScheme } = useColorScheme();
 
 	return (
-		<Pressable className="mb-6">
+		<Pressable onPress={onPress} className="mb-6">
 			<View className="relative w-72 h-12 border-2 border-gray-200 rounded-xl items-center px-4 flex-row">
 				<Image source={icon} className="w-8 h-8" resizeMode="contain" />
 				<Text

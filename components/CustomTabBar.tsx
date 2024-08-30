@@ -1,4 +1,4 @@
-import { View, Image, ImageBackground, Pressable } from 'react-native';
+import { View, Image, Pressable } from 'react-native';
 import React from 'react';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { useColorScheme } from 'nativewind';
@@ -6,8 +6,6 @@ import { useColorScheme } from 'nativewind';
 import {
 	darkTornPaper,
 	lightTornPaper,
-	lightBackground,
-	darkBackground,
 	darkHome,
 	darkBookshelf,
 	darkShop,
@@ -34,7 +32,7 @@ const CustomTabBar = ({
 }: BottomTabBarProps) => {
 	const { colorScheme } = useColorScheme();
 
-	const icon = {
+	const icon: { [key: string]: (props: any) => JSX.Element } = {
 		home: (props: any) => (
 			<Image
 				source={
@@ -118,6 +116,10 @@ const CustomTabBar = ({
 			/>
 
 			{state.routes.map((route, index) => {
+				if (!icon[route.name]) {
+					return null;
+				}
+
 				const { options } = descriptors[route.key];
 				const label =
 					options.tabBarLabel !== undefined
